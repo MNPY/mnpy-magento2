@@ -1,7 +1,7 @@
 {
     "name": "mnpy/module-magento2",
     "description": "MNPY Magento 2 extension",
-    "license": "BSD-2",
+    "license": "BSD-2-Clause",
     "authors": [
         {
             "email": "info@mnpy.io",
