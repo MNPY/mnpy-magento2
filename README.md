@@ -29,7 +29,7 @@ $ php bin/magento module:enable Mnpy_Payment
 $ php bin/magento cache:clean
 ```
 
-After that, you will find the settings under Stores -> Configuration -> Payment.
+After that, you will find the settings under Stores -> Configuration -> Sales -> Payment Methods.
 Fill in your API key and select the currencies you want to accept.
 
 ## License

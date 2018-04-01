@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<payment>
+			<mnpy>
+				<active>1</active>
+				<model>Mnpy\Magento2\Model\Payment\MNPY</model>
+				<order_status>pending</order_status>
+				<title>MNPY (Pay with Cryptocurrencies)</title>
+				<allowspecific>0</allowspecific>
+				<fee>0</fee>
+				<late>fraud</late>
+				<modus>staging</modus>
+				<ethaddress>0x........</ethaddress>
+			</mnpy>
+		</payment>
+	</default>
+</config>

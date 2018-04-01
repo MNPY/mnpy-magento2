@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="payment" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="1000" translate="label">
+			<group id="mnpy" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>MNPY</label>
+				<field id="active" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>Enabled</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="apikey" translate="label" type="text" sortOrder="2" showInDefault="1"
+					   showInWebsite="1" showInStore="1">
+					<label>API Key</label>
+					<comment><![CDATA[API key without staging_ or live_]]></comment>
+				</field>
+                <field id="apisecret" translate="label" type="text" sortOrder="2" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>API Secret key</label>
+                </field>
+				<field id="ethaddress" translate="label" type="text" sortOrder="3" showInDefault="1"
+					   showInWebsite="1" showInStore="1">
+					<label>ETH / ERC20 payout address</label>
+					<comment><![CDATA[Starts with 0x]]></comment>
+				</field>
+				<field id="late" translate="label" type="select" sortOrder="4" showInDefault="1"
+					   showInWebsite="1" showInStore="1">
+					<label>Late payment status</label>
+					<source_model>Magento\Sales\Model\Config\Source\Order\Status</source_model>
+					<comment><![CDATA[Status if payment is after payment due]]></comment>
+				</field>
+                <field id="currencies" translate="label" type="multiselect" sortOrder="4" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Enabled currencies</label>
+                    <source_model>Mnpy\Magento2\Model\Config\Source\Tokens</source_model>
+                </field>
+				<field id="modus" translate="label" type="select" sortOrder="5" showInDefault="1"
+					   showInWebsite="1" showInStore="1">
+					<label>Mode</label>
+					<source_model>Mnpy\Magento2\Model\Config\Source\Modus</source_model>
+				</field>
+				<field id="fee" translate="label" type="text" sortOrder="6" showInDefault="1"
+					   showInWebsite="1" showInStore="1">
+					<label>Fee (%)</label>
+					<comment><![CDATA[Example: 7.50]]></comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
