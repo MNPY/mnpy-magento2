@@ -25,7 +25,7 @@ Don't execute the following commands without local testing.
 
 ```
 $ php bin/magento setup:upgrade
-$ php bin/magento module:enable Mnpy_Payment
+$ php bin/magento module:enable Mnpy_Magento2
 $ php bin/magento cache:clean
 ```
 
